@@ -44,6 +44,7 @@ namespace Assignment03
             }
             set
             {
+                this._moonCount = value;
             }
         }
 
@@ -63,6 +64,7 @@ namespace Assignment03
             }
             set
             {
+                this._orbitalPeriod = value;
             }
         }
 
@@ -74,10 +76,11 @@ namespace Assignment03
             }
             set
             {
+                this._ringCount = value;
             }
         }
 
-        public int RotationPeriod
+        public double RotationPeriod
         {
             get
             {
@@ -85,7 +88,29 @@ namespace Assignment03
             }
             set
             {
+                this._rotationPeriod = value;
             }
+        }
+
+
+
+        // Constructor Method ++++++++++++++++++++++++
+        public Planet(string name, double diameter, double mass)
+        {
+            this._name = name;
+            this._diameter = diameter;
+            this._mass = mass;
+
+        }
+
+
+
+
+        // Overridden Method ++++++++++++++++++++=
+
+        public override string ToString()
+        {
+            return "Name: " + this._name + ", Diameter: " + this._diameter + ", Mass: " + this._mass + ".";
         }
 
     }
