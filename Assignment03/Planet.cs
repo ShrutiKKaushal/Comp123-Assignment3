@@ -24,7 +24,7 @@ namespace Assignment03
         {
             get
             {
-                return this._diameter;
+                return this._diameter; // Read only
             }
         }
 
@@ -40,7 +40,7 @@ namespace Assignment03
         {
             get
             {
-                return this._moonCount;
+                return this._moonCount; // Read and Write Property
             }
             set
             {

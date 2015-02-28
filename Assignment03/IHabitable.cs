@@ -8,6 +8,6 @@ namespace Assignment03
 {
     interface IHabitable
     {
-        Habitable();
+        bool Habitable();
     }
 }
